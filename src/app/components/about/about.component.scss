@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+$fontTitle: 'Comfortaa', cursive;
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        width: 40%;
+        h2 {
+            font-family: $fontTitle;
+            font-size: 55px;
+            font-weight: 300;
+        }
+        p {
+            font-family: $fontTitle;
+            font-size: 14px;
+            color: #757b8a;
+        }
+        .botons {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            .expert {
+                padding: 12px 28px;
+                background-color: #0151ff;
+                text-decoration: none;
+                color: white;
+                font-family: $fontTitle;
+                font-size: 14px;
+                border-radius: 3px;
+            }
+            .watch-video {
+                text-decoration: none;
+                color: black;
+                font-family: $fontTitle;
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+    }
+    .container-2 {
+        width: 50%;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.linea {
+    margin: auto;
+    width: 90%;
+    height: 1px;
+    background-color: #757b8a;
+}
+
+@media screen and (width < 767px) {
+    .main {
+        flex-direction: column;
+        .container-1 {
+            width: 80%;
+            align-items: center;
+        }
+        .container-2 {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (width < 610px) {
+    .main {
+        width: 100%;
+        .container-1 {
+            width: 80%;
+            align-items: center;
+            h2 {
+                font-size: 40px;
+            }
+        }
+        .container-2 {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (width < 409px) {
+    .main {
+        width: 100%;
+        .container-1 {
+            width: 80%;
+            align-items: center;
+            h2 {
+                font-size: 40px;
+            }
+        }
+        .container-2 {
+            width: 100%;
+        }
+    }
+}
